@@ -25,5 +25,5 @@ Including an example of how to use role. Create rundeck.yml with :
       roles:
          - rundeck
 
-Run is by - ansible-playbook -i hosts rundeck.yml
+Run it by - ansible-playbook -i hosts rundeck.yml
 
