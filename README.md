@@ -11,9 +11,12 @@ Requirements
 * Create the job defination to submit to rundeck server
 * Create a shell script to grab the rundeck job-id and run the job 
 The script is as below
- #!/bin/bash
- VAR=`cat /tmp/rundeck-id | grep -o -P '(?<=id\>).*(?=</\id)'`
- curl -X POST -H x-rundeck-auth-token:ReXCGTr89gSwcJVOw91YQVISZnjKNwUO http://1.2.3.4:4440/api/21/job/$VAR/run
+--------------
+#!/bin/bash
+VAR=`cat /tmp/rundeck-id | grep -o -P '(?<=id\>).*(?=</\id)'`
+curl -X POST -H x-rundeck-auth-token:dfvfGTrvdddc89gSwcJVOw91YQVISZnjKNwUO http://Rundeck-Server-Ip:4440/api/21/job/$VAR/run
+
+Here we have to provide token and server ip to script.
 
 Role Variables
 --------------
