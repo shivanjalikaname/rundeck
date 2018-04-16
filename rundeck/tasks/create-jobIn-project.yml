@@ -3,8 +3,6 @@
 - template: 
     src: job.xml.j2
     dest: /opt/job.xml
-#    owner: 
-#    group: wheel
-#    mode: 0644
+
 - name: Creating Job in project 
   command: curl -v -H x-rundeck-auth-token:{{ RUNDECK_AUTH_TOKEN }} http://{{ RUNDECK_SERVER }}:4440/api/21/project/{{ PROJECT_NAME }}/jobs/import -F xmlBatch=@"/opt/job.xml" -o /tmp/rundeck-id
