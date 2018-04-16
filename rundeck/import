@@ -1,0 +1,13 @@
+<result success='true' apiversion='22'>
+  <succeeded count='1'>
+    <job index='1' href='http://150.150.150.185:4440/api/22/job/679af0d9-c74b-4dcc-82ab-beee7203e328'>
+      <id>679af0d9-c74b-4dcc-82ab-beee7203e328</id>
+      <name>job1</name>
+      <group></group>
+      <project>project1</project>
+      <permalink>http://150.150.150.185:4440/project/project1/job/show/679af0d9-c74b-4dcc-82ab-beee7203e328</permalink>
+    </job>
+  </succeeded>
+  <failed count='0' />
+  <skipped count='0' />
+</result>

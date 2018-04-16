@@ -1,0 +1,5 @@
+---
+# vars file for roles/rundeck
+RUNDECK_AUTH_TOKEN : iwnfaejiaecrvujbafdcx
+RUNDECK_SERVER : 1.2.3.4
+PROJECT_NAME : project

@@ -1,0 +1,12 @@
+---
+# Create a job in the project.The job name is predefined in job.xml file. This job.xml contains sample job defination for rundeck.
+- template: 
+    src: job.xml.j2
+    dest: /opt/job.xml
+#    owner: 
+#    group: wheel
+#    mode: 0644
+- name: Creating Job in project 
+  command: curl -v -H x-rundeck-auth-token:{{ RUNDECK_AUTH_TOKEN }} http://{{ RUNDECK_SERVER }}:4440/api/21/project/{{ PROJECT_NAME }}/jobs/import -F xmlBatch=@"/opt/job.xml" -o /tmp/rundeck-id
+
+#curl -v -H x-rundeck-auth-token:ReXCGTr89gSwcJVOw91YQVISZnjKNwUO http://150.150.150.185:4440/api/16/project/project2/jobs/import -F xmlBatch=@"job.xml"

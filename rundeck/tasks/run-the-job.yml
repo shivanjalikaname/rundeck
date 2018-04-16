@@ -1,0 +1,8 @@
+---
+# Get the Job-id and run the rundeck job by api
+- name: Transfer and execute a script to get job-id .
+  copy: src=/root/Get-Rundeck-JobId.sh dest=/home/ mode=0777
+
+- name: Execute the script
+  command: sh /home/Get-Rundeck-JobId.sh
+
