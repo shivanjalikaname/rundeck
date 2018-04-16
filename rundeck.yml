@@ -1,0 +1,5 @@
+---
+- name: Automate the rundecks job
+  hosts: localhost
+  roles:
+    - rundeck
